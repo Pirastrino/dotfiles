@@ -1,0 +1,15 @@
+{
+  "suggest.noselect": false,
+  "prettier.requireConfig": true,
+  "eslint.autoFixOnSave": true,
+  "tslint.enable": true,
+  "tslint.autoFixOnSave": true,
+  "tsserver.enableJavascript": false,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "markdown",
+    "json",
+    "typescript",
+    "typescriptreact"
+  ]
+}
