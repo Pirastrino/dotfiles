@@ -1,11 +1,11 @@
 # PATHS
 export ZSH="/home/martin/.oh-my-zsh"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 export DENO_INSTALL="/home/martin/.deno"
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export PATH="$PATH:/mnt/c/Program Files/Onivim2"
-export VOLTA_HOME="$HOME/.volta"
 
 # Powerline configuration
 if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
@@ -35,8 +35,7 @@ alias co="git checkout"
 # Other
 alias vim="nvim"
 alias tm="tmux"
-alias kiwi="tmux attach -t kiwi"
-alias sudoku="tmux attach -t sudoku"
+alias ta="tmux attach -t"
 alias lla="ls -lsah | lolcat"
 alias oni="oni2.exe"
 alias cl="clear"
