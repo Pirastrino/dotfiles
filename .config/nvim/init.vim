@@ -48,6 +48,8 @@ endfun
 noremap <silent> <C-E> :call ToggleNetrw(0)<CR>
 noremap <silent> <leader>pv :call ToggleNetrw(1)<CR>
 
+" autocmd WinEnter * if winnr('$') == 1 && getbufvar(winbufnr(winnr()), "&filetype") == "netrw" || &buftype == 'quickfix' |q|endif
+
 let g:gruvbox_contrast_dark = 'hard'
 let g:gruvbox_invert_celection='0'
 let g:airline_theme='minimalist'

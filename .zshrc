@@ -42,3 +42,4 @@ alias cl="clear"
 alias vreset="rm -rf ~/.local/share/verdaccio"
 alias vpn="sudo openfortivpn -c ~/.config/openfortivpn/config -v"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias y="yarn"
