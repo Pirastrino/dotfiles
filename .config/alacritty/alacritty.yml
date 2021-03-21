@@ -1,0 +1,6 @@
+window:
+  padding:
+    x: 4
+    y: 0
+  deconrations: buttonless
+background_opacity: 0.90

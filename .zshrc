@@ -1,11 +1,8 @@
 # PATHS
 export ZSH="/home/martin/.oh-my-zsh"
-export VOLTA_HOME="$HOME/.volta"
-export PATH="$VOLTA_HOME/bin:$PATH"
 export DENO_INSTALL="/home/martin/.deno"
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
-export PATH="$PATH:/mnt/c/Program Files/Onivim2"
 
 # Powerline configuration
 if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
@@ -43,3 +40,5 @@ alias vreset="rm -rf ~/.local/share/verdaccio"
 alias vpn="sudo openfortivpn -c ~/.config/openfortivpn/config -v"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias y="yarn"
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
