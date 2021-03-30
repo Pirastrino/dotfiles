@@ -6,6 +6,7 @@ export DENO_INSTALL="/home/martin/.deno"
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
 export PATH="$PATH:/mnt/c/Program Files/Onivim2"
+export PATH=$PATH:/usr/local/go/bin
 
 # Powerline configuration
 if [ -f $HOME/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh ]; then
@@ -34,8 +35,8 @@ alias co="git checkout"
 
 # Other
 alias vim="nvim"
-alias tm="tmux"
-alias ta="tmux attach -t"
+alias tm="tmux -2"
+alias ta="tmux -2 attach -t"
 alias lla="ls -lsah | lolcat"
 alias oni="oni2.exe"
 alias cl="clear"
