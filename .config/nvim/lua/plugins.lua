@@ -18,6 +18,7 @@ return require('packer').startup(function()
     use 'kabouzeid/nvim-lspinstall'
     use 'nvim-treesitter/nvim-treesitter'
     use 'hrsh7th/nvim-compe'
+    use 'terrortylor/nvim-comment'
     use 'hrsh7th/vim-vsnip'
     use 'morhetz/gruvbox'
     use 'pineapplegiant/spaceduck'

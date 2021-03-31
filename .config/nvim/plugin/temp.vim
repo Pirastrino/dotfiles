@@ -34,11 +34,6 @@ noremap <silent> <leader>pv :call ToggleNetrw(1)<CR>
 " set t_Co=256
 " set termguicolors
 "
-hi! Normal ctermbg=NONE guibg=NONE
-hi! EndOfBuffer ctermbg=NONE guibg=NONE
-hi! LineNr ctermbg=NONE guibg=NONE
-hi! CursorLineNr ctermbg=NONE guibg=NONE
-hi! Visual guibg=#686F9A 
 
 inoremap <silent><expr> <C-Space> compe#complete()
 inoremap <silent><expr> <CR>      compe#confirm('<CR>')
@@ -46,3 +41,10 @@ inoremap <silent><expr> <C-e>     compe#close('<C-e>')
 inoremap <silent><expr> <C-f>     compe#scroll({ 'delta': +4 })
 inoremap <silent><expr> <C-d>     compe#scroll({ 'delta': -4 })
 
+hi! ColorColumn ctermbg=0 guibg=#686f9a
+hi! Normal ctermbg=NONE guibg=NONE
+hi! Comment guifg=#686f9a
+hi! EndOfBuffer ctermbg=NONE guibg=NONE
+hi! LineNr ctermbg=NONE guibg=NONE guifg=#686f9a
+hi! CursorLineNr ctermbg=NONE guibg=NONE guifg=#e39400
+hi! Visual guibg=#686f9a
