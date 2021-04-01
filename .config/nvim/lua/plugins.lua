@@ -9,7 +9,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 vim.cmd [[packadd packer.nvim]]
--- vim.cmd 'autocmd BufWritePost plugins.lua PackerCompile'
+vim.cmd [[autocmd BufWritePost plugins.lua PackerCompile]]
 -- vim.cmd 'autocmd BufWritePre *.lua lua vim.lsp.buf.formatting_sync(nil, 100)'
 
 return require('packer').startup(function()
@@ -33,42 +33,7 @@ return require('packer').startup(function()
             'kyazdani42/nvim-web-devicons',
             opt = true
         },
-        config = function()
-            require('lualine').setup {
-                options = {
-                    theme = 'spaceduck',
-                    section_separators = {'', ''},
-                    component_separators = '|',
-                    icons_enabled = true
-                },
-                sections = {
-                    lualine_a = {{
-                        'mode',
-                        upper = true
-                    }},
-                    lualine_b = {{
-                        'branch',
-                        icons_enabled = true,
-                        icon = 'ᚠ'
-                    }},
-                    lualine_c = {{
-                        'filename',
-                        file_status = true
-                    }},
-                    lualine_x = {'encoding', 'fileformat', 'filetype'},
-                    lualine_y = {'progress'},
-                    lualine_z = {'location'}
-                },
-                inactive_sections = {
-                    lualine_a = {},
-                    lualine_b = {},
-                    lualine_c = {'filename'},
-                    lualine_x = {'location'},
-                    lualine_y = {},
-                    lualine_z = {}
-                }
-            }
-        end
+        config = require('set-lualine').config()
     }
 end)
 
