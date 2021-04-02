@@ -32,6 +32,10 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/home/martin/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+  },
   gruvbox = {
     loaded = true,
     path = "/home/martin/.local/share/nvim/site/pack/packer/start/gruvbox"

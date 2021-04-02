@@ -20,6 +20,7 @@ return require('packer').startup(function()
     use 'hrsh7th/nvim-compe'
     use 'terrortylor/nvim-comment'
     use 'hrsh7th/vim-vsnip'
+    use 'lewis6991/gitsigns.nvim'
     use 'morhetz/gruvbox'
     use 'pineapplegiant/spaceduck'
     use 'kyazdani42/nvim-web-devicons'

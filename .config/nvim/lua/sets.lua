@@ -8,7 +8,7 @@ o.hidden = true
 o.showmode = false
 o.errorbells = false
 o.backup = false
-o.undodir = '~/.undodir'
+o.undodir = '$HOME/.vim/undo'
 o.undofile = true
 o.tabstop = 4
 o.softtabstop = 4
@@ -24,4 +24,4 @@ wo.relativenumber = true
 wo.wrap = false
 wo.scrolloff = 12
 wo.colorcolumn = '80'
-
+wo.signcolumn = 'yes:1'
