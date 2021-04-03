@@ -16,9 +16,11 @@ M.config = function()
             lualine_b = {{
                 'branch',
                 icons_enabled = true,
-                icon = 'ᚠ'
+                icon = '',
+                color_devicons = '#111111'
             }},
-            lualine_c = {{
+            lualine_c = {{'diff'},{
+                -- 'diff',
                 'filename',
                 file_status = true
             }},

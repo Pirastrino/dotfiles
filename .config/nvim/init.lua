@@ -7,8 +7,9 @@ require('set-compe')
 require('set-telescope')
 require('set-comment')
 require('set-gitsigns')
+require('set-nvim-tree')
 
 -- LSP
 require('lsp')
-require('lsp.js-ts')
+-- require('lsp.js-ts')
 require('colorscheme')

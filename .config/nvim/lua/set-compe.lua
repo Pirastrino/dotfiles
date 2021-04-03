@@ -28,32 +28,16 @@ require'compe'.setup {
         nvim_lua = true,
         vsnip = true,
         snippets_nvim = true,
-        treesitter = true
-        -- spell = true;
-        -- tags =  true;
+        treesitter = true,
+        tags = true,
+        tabnine = true
     }
 }
 map('i', '<C-Space>', 'compe#complete()', options)
-map('i', '<CR>', 'compe#confirm(\'<CR>\')', {
-    noremap = true,
-    silent = true,
-    expr = true
-})
-map('i', '<C-e>', 'compe#close(\'<C-e>\')', {
-    noremap = true,
-    silent = true,
-    expr = true
-})
-map('i', '<C-f>', 'compe#scroll({ \'delta\': +4 })', {
-    noremap = true,
-    silent = true,
-    expr = true
-})
-map('i', '<C-d>', 'compe#scroll({ \'delta\': -4 })', {
-    noremap = true,
-    silent = true,
-    expr = true
-})
+map('i', '<CR>', 'compe#confirm(\'<CR>\')', options)
+map('i', '<C-e>', 'compe#close(\'<C-e>\')', options)
+map('i', '<C-f>', 'compe#scroll({ \'delta\': +4 })', options)
+map('i', '<C-d>', 'compe#scroll({ \'delta\': -4 })', options)
 
 local t = function(str)
     return vim.api.nvim_replace_termcodes(str, true, true, true)
